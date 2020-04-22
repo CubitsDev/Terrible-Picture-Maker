@@ -1,0 +1,35 @@
+<head>
+    <meta name="viewport" 
+        content="width=device-width, 
+        initial-scale=1.0, 
+        user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+  <title>Guide Drawing Maker</title>
+</head>
+<body>
+    <div id="outerContainer">
+        <h1>Terrible Picture Maker <small style="font-size: 0.5em;">By Tom</small></h1>
+        <p>Create cool pictures with my terrible drawings!<br>Currently, I would reccomend doing text last as the items stack over each other. I.e. the first object will be overlapped by everything else!</p>
+        <div id="container">
+        </div>
+        <div class="object">
+            <h1>Text Box</h1>
+            <input type="text" id="textinput"/>
+            <br>
+            <br>
+            <input type="button" onclick="createNewText()" value="Add Text"/>
+        </div>
+        <div class="object">
+            <h1>Upload/Save</h1>
+            <br>
+            <br>
+            <input type="file" id="fileinput"/>
+            <br>
+            <br>
+            <input type="button" value="Save" onclick="save()"/>
+        </div>
+      </div>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"></script>
+      <script src="index.js"></script>
+</body>

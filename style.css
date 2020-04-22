@@ -1,0 +1,46 @@
+body {
+    background-color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+#container {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    touch-action: none;
+    position: relative;
+    margin-top: 10px;
+    color:black;
+}
+.object {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    float: left;
+    color: black;
+}
+.item {
+    position: absolute;
+    z-index: 9;
+    touch-action: none;
+    user-select: none;
+    
+}
+.item:active {
+    background-color: rgba(168, 218, 220, 1.00);
+}
+.item:hover {
+    cursor: pointer;
+    border-width: 20px;
+}
